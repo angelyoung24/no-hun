@@ -1,24 +1,39 @@
-@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap");
 
 $primaryColor: #fffffe;
 $secondaryColor: #e53170;
 $tertiaryColor: #f25f4c;
 $backgroundColor: #0f0e17;
-$primaryFont: 'Caveat', cursive;
-$secondaryFont: 'Roboto', sans-serif;
+$primaryFont: "Caveat", cursive;
+$secondaryFont: "Roboto", sans-serif;
 
 form {
-    display: flex;
-    justify-content: center;
+  display: grid;
+  grid-template-rows: 100px 1fr 1fr 1fr;
+  grid-column-gap: 36px;
+  justify-items: center;
+  align-items: center;
 }
 
 label {
-    font-family: $primaryFont;
-    font-size: 2rem;
+  font-family: $primaryFont;
+  font-size: 2.5rem;
+  color: $secondaryColor;
+  text-shadow: 4px 2px 1px $backgroundColor;
 }
 
-input[type='text'] {
-    display: block;
-    border-bottom: 1px solid $secondaryColor;
+input[type="text"] {
+  border: 0;
+  box-shadow: 0 0 15px 4px $backgroundColor;
+  padding: 10px;
 }
 
+button {
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  background-color: $secondaryColor;
+  color: $primaryColor;
+  font-weight: 600;
+  border-radius: 5px;
+}
