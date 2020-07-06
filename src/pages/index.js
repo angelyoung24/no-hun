@@ -1,5 +1,18 @@
 import React from "react"
 
-export default function Home() {
-  return <div>Hello world!</div>
+import Layout from '../components/layout'
+import Form from '../components/form'
+
+
+const Index = () => {
+  return (
+    <div>
+      <Layout>
+      <h1>Is This Company An MLM?</h1>
+      <Form />
+      </Layout>
+    </div>
+  )
 }
+
+export default Index

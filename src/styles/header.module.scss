@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto&display=swap');
+
+$primaryColor: #fffffe;
+$secondaryColor: #e53170;
+$tertiaryColor: #f25f4c;
+$backgroundColor: #0f0e17;
+$primaryFont: 'Caveat', cursive;
+$secondaryFont: 'Roboto', sans-serif;
+
+@mixin grid-header {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1px;
+    align-items: center;
+    text-align: center;
+    position: sticky;
+}
+
+.background {
+    @include grid-header();
+    background-color: $backgroundColor;
+    box-shadow: 2px 3px 2px $secondaryColor;
+}
+
+.title {
+    color: $primaryColor;
+    font-family: $primaryFont;
+    font-size: 3.5rem;
+    text-shadow: 4px 2px 1px $secondaryColor;
+}
+
+.link {
+    color: $primaryColor;
+    text-decoration: none;
+    font-family: $secondaryFont;
+    text-shadow: 5px 2px 1px $secondaryColor;
+    font-size: 1.5rem;
+}
+
+.active-link {
+    color: $secondaryColor;
+    text-shadow: 3px 2px 1px $primaryColor;
+}
