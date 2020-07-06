@@ -8,3 +8,6 @@ An app to prevent people from joining a Multi Level Marketing Company (MLM)
 <li>An about page that explains what a MLM is</li>
 <li>A resource page that educates people about the preditory nature of MLMs (with articles and videos)</li>
 </ol>
+
+# Deployment
+To be deployed on Netlify
